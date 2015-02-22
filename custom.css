@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/*
 @font-face {
     font-family: 'Cabin Sketch';
     src: url('fonts/cabinsketch-bold-webfont.eot');
@@ -8,16 +11,20 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
 
 html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);
   background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
-  background-color: #008999;
+  background-color: white;
+}
+
+#logo {
 }
 
 body {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #93cfd6;
   font-size: 24px; 
 }
@@ -53,13 +60,12 @@ body {
 
 #schedule h3 {
   padding-top: 0px;
-  font-size: 54px;
+  font-size: 30px;
   clear: right;
 }
 
 #schedule h2 {
-  line-height: 48px;
-  font-size: 34px;
+  font-size: 20px;
 }
 
 #schedule > * {
@@ -77,12 +83,13 @@ body {
 }
 
 /* twitter colours */
-#tweets a { color: rgba(255,255,255,0.7); }
+#tweets a { color: rgba(23,165,139,0.7); }
 .hentry .meta, #tweets .meta a { color: #99CFD7; }
 #tweets li { background: rgba(255, 255, 255, 0.2); }
-.tweet { color: #fff; }
+.tweet { color: black; }
 
 /* this simply puts a large background image on the schedule element if it matches the schedule time */
+/*
 #schedule[data-time="0940"] {
   background-image: url(/images/sample/remy.jpg);
 }
@@ -119,8 +126,17 @@ body {
 #schedule[data-time="1900"] {
   background-image: url(/images/sample/closing.jpg); 
 }
+*/
 
 /* this allows us to customise what part is animated to fullscreen */
+#notices .fullscreen img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -170px;
+  margin-top: -94px;
+}
 #notices .fullscreen {
   top: 100%;
   background: white;

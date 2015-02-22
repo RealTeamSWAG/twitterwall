@@ -2,7 +2,7 @@ var config = {
   // Twitter API (Proxy) URL
   baseUrl: 'http://conf2015.openbelgium.be:7890',
 
-  debug: false,
+  debug: true,
   title: 'Open Belgium 2015',
 
   search: 'from:@openbelgium OR @openbelgium OR #openbelgium15',
