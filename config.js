@@ -1,12 +1,12 @@
 var config = {
   // Twitter API (Proxy) URL
-  baseUrl: 'http://localhost:7890',
+  baseUrl: 'http://conf2015.openbelgium.be:7890',
 
   debug: false,
-  title: 'Twitter wall built by @rem',
+  title: 'Open Belgium 2015',
 
-  search: 'from:@fullfrontalconf OR @fullfrontalconf OR #fullfrontalconf OR #fullfrontal2011 OR full-frontal.org OR #fullfrontal11',
-  list: 'fullfrontalconf/delegates11', // optional, just comment it out if you don't want it
+  search: 'from:@openbelgium OR @openbelgium OR #openbelgium15',
+  // list: 'fullfrontalconf/delegates11', // optional, just comment it out if you don't want it
 
   timings: {
     showNextScheduleEarlyBy: '5m', // show the next schedule 10 minutes early
