@@ -20,7 +20,12 @@ html {
   background-color: white;
 }
 
+#notices {
+  display: none;
+}
+
 #logo {
+  height: 50%;
 }
 
 body {
@@ -30,12 +35,7 @@ body {
 }
 
 #schedule div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   background: rgba(255,255,255,0.6);
-
   padding: 20px;
 }
 
@@ -51,12 +51,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #schedule a {
   color: rgba(0,0,0,0.7);
 }
+
 
 #schedule h3 {
   padding-top: 0px;
@@ -128,6 +129,7 @@ body {
 }
 */
 
+
 /* this allows us to customise what part is animated to fullscreen */
 #notices .fullscreen img {
   display: block;
@@ -140,6 +142,14 @@ body {
 #notices .fullscreen {
   top: 100%;
   background: white;
+}
+
+#pc_opentransport{
+  font-size: 19px;
+}
+
+#pc_opentransport h3{
+  font-size: 17px;
 }
 
 /* this third notice will slide upwards as it also has .fullscreen */

@@ -116,16 +116,18 @@ function parseTiming(t) {
 
 function findNextSchedule(delayM, after) {
   var due = null,
-      t = after ? parseTime(after) : window.debugTime || (new Date()).getTime(),
-      times = Object.keys(SCHEDULE).sort();
+  t = after ? parseTime(after) : window.debugTime || (new Date()).getTime(),
+  times = Object.keys(SCHEDULE).sort();
+
 
   for (var i = 0; i < times.length; i++) {
     s = times[i];
-    if ((parseTime(s) + delayM) > t) break;
+    if ((parseTime(s) + delayM) > t) {
+        break;
+    }
   }
 
   first = false;
-
   return s;
 }
 
@@ -133,6 +135,10 @@ function showSchedule(due) {
   if (due != lastDue) {
     lastDue = due;
     $schedule.hide();
+    //$('#schedule > div').each(function() {
+    //  console.log($(this).attr('data-time'));
+    //});    
+    console.log(SCHEDULE);
     SCHEDULE[due].show();
     $('#schedule').attr('data-time', due);
     // var $content = $('#content div').html(SCHEDULE[due]),
@@ -346,6 +352,7 @@ function notices() {
 
       setTimeout(show, customTiming || config.timings.defaultNoticeHoldTime || 10 * 1000);
     };
+    console.log('Going to show to notice');
     show();
   }
 }

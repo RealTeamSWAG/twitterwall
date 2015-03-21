@@ -29,7 +29,7 @@
   box-flex: 1;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 body, p, li, ul { margin: 0; padding: 0; }
