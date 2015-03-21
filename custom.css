@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 
 /*
 @font-face {
@@ -14,10 +15,10 @@
 */
 
 html {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);
+  /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC); */
   background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
-  background-color: white;
+  background-color: #007EAE;
 }
 
 #notices {
@@ -25,7 +26,24 @@ html {
 }
 
 #logo {
-  height: 50%;
+  display: block;
+  padding: 20px;
+  background-image: url('images/logo_hackdebib.png');
+  background-repeat: no-repeat;
+  height: 120px;
+  padding-left: 140px;
+  color: white;
+}
+
+#logo #logo_text_large {
+  display: block;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+}
+#logo #logo_text_small {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 14px;
+  display: block;
 }
 
 body {
@@ -35,7 +53,7 @@ body {
 }
 
 #schedule div {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.2);
   padding: 20px;
 }
 
@@ -84,8 +102,8 @@ body {
 }
 
 /* twitter colours */
-#tweets a { color: rgba(23,165,139,0.7); }
-.hentry .meta, #tweets .meta a { color: #99CFD7; }
+#tweets a { color: #6dd8ff }
+.hentry .meta, #tweets .meta a { color: #6dd8ff; }
 #tweets li { background: rgba(255, 255, 255, 0.2); }
 .tweet { color: black; }
 
@@ -141,7 +159,7 @@ body {
 }
 #notices .fullscreen {
   top: 100%;
-  background: white;
+  background: #007EAE;
 }
 
 #pc_opentransport{

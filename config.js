@@ -5,7 +5,7 @@ var config = {
   debug: false,
   title: 'Apps for Ghent',
 
-  search: 'from:@AppsForGhent OR @AppsForGhent OR #appsforghent OR #hackdebib',
+  search: 'from:@AppsForGhent OR @AppsForGhent OR #appsforghent OR #hackdebib OR #hackthebib OR #appsforgent OR #hacklabib',
   // list: 'fullfrontalconf/delegates11', // optional, just comment it out if you don't want it
 
   timings: {
